@@ -64,7 +64,7 @@ const introItems = ref([{
             color: 'black',
             href: 'https://www.statsyuk.ca/'
         }, { default: () => "Statsyuk Analytics" }),
-        ", where I worked across high-level web apps and low-level computer vision infrastructure."
+        ", where I worked across full-stack apps and inference infrastructure."
     ])
 }, {
     id: 4,
@@ -80,7 +80,7 @@ const introItems = ref([{
 }, {
     id: 5,
     content: () => h('span', [
-        "Continuing to deepen my understanding of high performance low-level systems in areas like AI infrastructure, and most recently, compilers =)"
+        "Continuing to deepen my understanding of high performance low level systems."
     ])
 }])
 

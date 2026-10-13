@@ -14,6 +14,7 @@ function toggleSkill(skillAlt) {
 
 import JavaLogo from '@/assets/logos/stack/java.png'
 import SQLLogo from '@/assets/logos/stack/sqlalchemy.png'
+import OpenCVLogo from '@/assets/logos/stack/opencv.png'
 import TorchLogo from '@/assets/logos/stack/torch.png'
 import JupyterLogo from '@/assets/logos/stack/jupyter.png'
 import AWSLogo from '@/assets/logos/stack/aws.png'
@@ -35,11 +36,13 @@ import CSharpLogo from '@/assets/logos/stack/csharp.png'
 import GCPLogo from '@/assets/logos/stack/gcp.png'
 import FlaskLogo from '@/assets/logos/stack/flask.png'
 import PrismaLogo from '@/assets/logos/stack/prisma.png'
+import OpenAILogo from '@/assets/logos/stack/openai.png'
 import UnityLogo from '@/assets/logos/stack/unity.png'
 
 const skills = [
     { src: JavaLogo, alt: 'Java', shadowColor: '#E51F2F' },
     { src: SQLLogo, alt: 'SQL', shadowColor: '#ce4359' },
+    { src: OpenCVLogo, alt: 'OpenCV', shadowColor: '#fe0b02' },
     { src: TorchLogo, alt: 'Torch', shadowColor: '#ee4d2e' },
     { src: JupyterLogo, alt: 'Jupyter', shadowColor: '#E87125' },
     { src: AWSLogo, alt: 'AWS', shadowColor: '#fa6504' },
@@ -61,9 +64,11 @@ const skills = [
     { src: CSharpLogo, alt: 'C#', shadowColor: '#36128A' },
     { src: GCPLogo, alt: 'GCP', shadowColor: '#757575' },
     { src: FlaskLogo, alt: 'Flask', shadowColor: '#6b6b6b' },
+    { src: OpenAILogo, alt: 'OpenAI API', shadowColor: '#6b6b6b' },
     { src: UnityLogo, alt: 'Unity', shadowColor: '#1C2834' },
 ]
 
+import BasecaseCover from '@/assets/projects/basecase.png'
 import SkylineSurvivalCover from '@/assets/projects/skylinesurvival.png'
 import MathscriptCover from "@/assets/projects/mathscript.jpeg"
 import CampusYapCover from '@/assets/projects/campusyap.png'
@@ -74,21 +79,30 @@ import ConnectFourCover from '@/assets/projects/connect4.png'
 const ProjectList = ref([{   
     rotation: 0,
     flipped: false,
+    image: BasecaseCover,
+    title: 'Basecase',
+    demo: '#',
+    repo: 'https://github.com/batteryspecial/skyline-survival',
+    skills: ['OpenCV', 'PyTorch', 'LangChain',],
+    description: "An agentic approach to multibehavioral physical AI. Type your desired behaviour using natural language and watch the hardware activity change in real-time.",
+}, {   
+    rotation: 0,
+    flipped: false,
     image: SkylineSurvivalCover,
     title: 'Skyline Survival',
     demo: '#',
     repo: 'https://github.com/batteryspecial/skyline-survival',
     skills: ['Unity', 'C#', '.NET',],
     description: "An improvement to Unity's Battle resource pack. Features a wave counter, smoother movement, new explosive powerups, and enhanced enemies.",
-}, {   
+}, {
     rotation: 0,
     flipped: false,
     image: MathscriptCover,
     title: 'MathScript',
     demo: '#',
     repo: 'https://github.com/batteryspecial/mathscript',
-    skills: ['Next.js', 'Slate.js', 'KaTeX', 'BetterAuth'],
-    description: 'A fully inline web text editor. Write documents and export to LaTeX. Informally, "the Jupyter notebook for mathematical proofs." Currently in development.',
+    skills: ['Next.js', 'Slate.js', 'KaTeX'],
+    description: 'An inline, cellular, natural language to LaTeX web text editor. Write documents and export into full documents. Informally, "the Jupyter notebook for mathematical proofs."',
 }, {   
     rotation: 0,
     flipped: false,
@@ -96,7 +110,7 @@ const ProjectList = ref([{
     title: 'CampusYap',
     demo: '#',
     repo: 'https://github.com/aicheye/project_team_23',
-    skills: ['Android Studios', 'Flask', 'MySQL'],
+    skills: ['Android Studio', 'Flask', 'MySQL'],
     description: 'A location-aware Android native discussion app for Wilfrid Laurier and Waterloo students. The app enables verified campus members to post, reply, and react anonymously to short text messages within a defined geographic radius. Posts will only be visible to users in the same verified region.',
 }, {   
     rotation: 0,
@@ -105,7 +119,7 @@ const ProjectList = ref([{
     title: 'Dear Friends',
     demo: 'https://chinookcuriositycentral.vercel.app',
     repo: 'https://github.com/batteryspecial/dear-friends',
-    skills: ['Django Rest Framework', 'Vue.js', 'Anthropic API'],
+    skills: ['Django', 'Vue.js', 'AWS','OpenAI'],
     description: 'gone but not forgotten',
 }, {   
     rotation: 0,

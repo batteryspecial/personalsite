@@ -49,7 +49,7 @@ const emit = defineEmits(['flip']);
 
             <!-- Back (Light Glass Tint) -->
             <div class="card-back backface-hidden overflow-auto flex flex-col bg-white/10 border border-white/20 rounded-xl">
-                <div class="p-[2rem] flex-1 flex lg:text-justify justify-center">
+                <div class="p-[2rem] flex-1 flex justify-center">
                     <span class="select-none text-md text-white">{{ project.description }}</span>
                 </div>
             </div>

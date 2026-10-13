@@ -41,7 +41,7 @@ const socialIcons = [
 
                     <!-- Legal -->
                     <div class="opacity-60">
-                        <p>© 2025 Battery Special. CC BY-SA 4.0.</p>
+                        <p>© 2026 batteryspecial. CC BY-SA 4.0.</p>
                     </div>
                 </div>
 
