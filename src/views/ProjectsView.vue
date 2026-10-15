@@ -1,6 +1,5 @@
 <script setup>
-import { h, ref, reactive } from 'vue'
-import InlineEntry from '@/components/Inline.vue'
+import { ref, reactive } from 'vue'
 import ProjectsEntry from '@/components/ProjectsEntry.vue'
 
 const activeSkills = reactive(new Set())
@@ -68,32 +67,41 @@ const skills = [
     { src: UnityLogo, alt: 'Unity', shadowColor: '#1C2834' },
 ]
 
+import LandfillCover from '@/assets/projects/landfill.png'
 import BasecaseCover from '@/assets/projects/basecase.png'
 import SkylineSurvivalCover from '@/assets/projects/skylinesurvival.png'
-import MathscriptCover from "@/assets/projects/mathscript.jpeg"
+import MathscriptCover from "@/assets/projects/mathscript.png"
 import CampusYapCover from '@/assets/projects/campusyap.png'
-import DearFriendsCover from '@/assets/projects/dearfriends.jpeg'
-import BlockedManCover from '@/assets/projects/blockedman.png'
+import DearFriendsCover from '@/assets/projects/dearfriends.png'
 import ConnectFourCover from '@/assets/projects/connect4.png'
 
 const ProjectList = ref([{   
     rotation: 0,
     flipped: false,
+    image: LandfillCover,
+    title: 'Landfill',
+    demo: '#',
+    repo: 'https://github.com/batteryspecial/landfill',
+    skills: ['OpenCV', 'PyTorch', 'LangChain',],
+    description: "An efficient Rust-based compiler for all RV32I core instructions.",
+}, {   
+    rotation: 0,
+    flipped: false,
     image: BasecaseCover,
     title: 'Basecase',
     demo: '#',
-    repo: 'https://github.com/batteryspecial/skyline-survival',
+    repo: 'https://github.com/batteryspecial/basecase',
     skills: ['OpenCV', 'PyTorch', 'LangChain',],
     description: "An agentic approach to multibehavioral physical AI. Type your desired behaviour using natural language and watch the hardware activity change in real-time.",
 }, {   
     rotation: 0,
     flipped: false,
-    image: SkylineSurvivalCover,
-    title: 'Skyline Survival',
-    demo: '#',
-    repo: 'https://github.com/batteryspecial/skyline-survival',
-    skills: ['Unity', 'C#', '.NET',],
-    description: "An improvement to Unity's Battle resource pack. Features a wave counter, smoother movement, new explosive powerups, and enhanced enemies.",
+    image: DearFriendsCover,
+    title: 'Dear Friends',
+    demo: 'https://chinookcuriositycentral.vercel.app',
+    repo: 'https://github.com/batteryspecial/dear-friends',
+    skills: ['Django', 'Vue.js', 'AWS','OpenAI'],
+    description: 'gone but not forgotten',
 }, {
     rotation: 0,
     flipped: false,
@@ -115,21 +123,12 @@ const ProjectList = ref([{
 }, {   
     rotation: 0,
     flipped: false,
-    image: DearFriendsCover,
-    title: 'Dear Friends',
-    demo: 'https://chinookcuriositycentral.vercel.app',
-    repo: 'https://github.com/batteryspecial/dear-friends',
-    skills: ['Django', 'Vue.js', 'AWS','OpenAI'],
-    description: 'gone but not forgotten',
-}, {   
-    rotation: 0,
-    flipped: false,
-    image: BlockedManCover,
-    title: 'Blocked',
+    image: SkylineSurvivalCover,
+    title: 'Skyline Survival',
     demo: '#',
-    repo: 'https://github.com/batteryspecial/blocked-man',
-    skills: ['Unity', 'Unity Cloud', 'WebGL'],
-    description: "A fun Unity game built on Skyline Survival's resource pack. You control a sphere in third person and must precisely avoid obstacles to reach the end. Explosive powerups are available! A WebGL build is present but not active.",
+    repo: 'https://github.com/batteryspecial/skyline-survival',
+    skills: ['Unity', 'C#', '.NET',],
+    description: "An improvement to Unity's Battle resource pack. Features a wave counter, smoother movement, new explosive powerups, and enhanced enemies.",
 }, {   
     rotation: 0,
     flipped: false,
