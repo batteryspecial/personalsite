@@ -82,7 +82,7 @@ const ProjectList = ref([{
     title: 'Landfill',
     demo: '#',
     repo: 'https://github.com/batteryspecial/landfill',
-    skills: ['OpenCV', 'PyTorch', 'LangChain',],
+    skills: ['Rust', 'RISC-V', 'ARM Neon', 'mmap',],
     description: "An efficient Rust-based compiler for all RV32I core instructions.",
 }, {   
     rotation: 0,
